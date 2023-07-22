@@ -1,0 +1,12 @@
+#cloud-config
+
+system_info:
+  default_user:
+    name: ${ssh_user}
+ssh_pwauth: False
+ssh_authorized_keys:
+- ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ7LWziAjXD+Ds3N/eniBfUjj6Rn1l8hmOLKpA2tSZAa
+hostname: ${hostname}
+fqdn: ${hostname}.${domain}
+prefer_fqdn_over_hostname: false
+
